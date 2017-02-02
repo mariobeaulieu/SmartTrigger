@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:contentDescription="Background image for SmartTriggers' main activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/quizcircuit"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/titleAddTrigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Trigger"
+        android:textSize="36dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="#202020"/>
+
+    <LinearLayout
+        android:layout_below="@id/titleAddTrigger"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Trigger name:"
+            android:textSize="18sp"
+            android:background="#202020"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name this trigger"
+            android:textSize="18sp"
+            android:background="#a0a0a0"
+            android:padding="8dp"
+            android:ems="24"
+            android:id="@+id/nameOfTrigger" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Done"
+        android:onClick="returnToMainActivity"
+        />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:contentDescription="Background image for SmartTriggers' main activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/quizcircuit"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/mainListView">
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnAddTrigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addTrigger"
+        android:text="@string/BtnAddTriggerText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BtnMapsText"
+        android:onClick="showMap"
+        android:layout_toLeftOf="@id/BtnAddTrigger"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

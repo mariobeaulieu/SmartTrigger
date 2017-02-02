@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SmartTriggers</string>
+    <string name="title_activity_select_location">SmartTriggers</string>
+    <string name="BtnMapsText">Select position</string>
+    <string name="BtnAddTriggerText">Add a trigger</string>
+    <string name="Done">DONE</string>
+</resources>
